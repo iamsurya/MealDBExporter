@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MealDBExporter</name>
+    </assembly>
+    <members>
+        <member name="T:MealDBExporter.MealDBExporter">
+            <summary>
+            Main Class for program
+            </summary>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.Contains(System.String,System.String,System.StringComparison)">
+            <summary>
+            Self made String Compare tool
+            </summary>
+            <param name="source"></param>
+            <param name="toCheck"></param>
+            <param name="comp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.generateCurrentDirectoryPath(System.String)">
+            <summary>
+            Creates a CurrentDirectoryPath given a child file path.
+            </summary>
+            <param name="CurrentFilePath">The path of a file in the directory</param>
+            <returns>Full Path of Directory file exists in</returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.generateParentDirectoryPath(System.String)">
+            <summary>
+            Creates Parent Directory from CurrentFilePath
+            </summary>
+            <param name="CurrentFilePath">Path of Child\Child.txt</param>
+            <returns></returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.generateCurrentFileName">
+            <summary>
+            Creates CurrentFileName from CurrentDirectoryPath
+            </summary>
+            <returns>CurrentFileName</returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.getCurrentDirectoryName">
+            <summary>
+            Creates a Directory Name from Directory Path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.generateCurrentEventsFileName">
+            <summary>
+            Creates the events file name from the CurrentDirectoryPath
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.LoadMeals(System.String)">
+            <summary>
+            Loads all Meals from a Given events file
+            </summary>
+            <param name="FilePath">Path to events file</param>
+            <returns>List of Meals</returns>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.btnWriteNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            Code for the Write/Next Button
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.MealDBExporter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:MealDBExporter.MealDBExporter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:MealDBExporter.Meal">
+            <summary>
+            Stores a single Meal and all its information
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.MealNumber">
+            <summary>
+            MealNumber for this participant.
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.MealName">
+            <summary>
+            Name of Meal
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.StartTime">
+            <summary>
+            Start Time of Meal
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.EndTime">
+            <summary>
+            End Time of Meal
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.Location">
+            <summary>
+            Location of Meal
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.Seconds">
+            <summary>
+            Seconds
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.InCompany">
+            <summary>
+            InCompany
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.CompanyEating">
+            <summary>
+            CompanyEating
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="F:MealDBExporter.Meal.Activity">
+            <summary>
+            Activity
+            </summary>
+        </member>
+        <member name="M:MealDBExporter.Meal.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="MealNumber"></param>
+            <param name="MealName"></param>
+            <param name="StartTime"></param>
+            <param name="EndTime"></param>
+            <param name="Location"></param>
+            <param name="Seconds"></param>
+            <param name="InCompany"></param>
+            <param name="CompanyEating"></param>
+            <param name="Description"></param>
+            <param name="Activity"></param>
+        </member>
+        <member name="M:MealDBExporter.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:MealDBExporter.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MealDBExporter.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MealDBExporter.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
